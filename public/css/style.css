@@ -1,0 +1,93 @@
+
+.conversations {
+    overflow-y:auto;
+    height: 400px;
+}
+.list-group {
+    overflow-y:auto;
+    height: 400px;
+}
+
+.list-group::-webkit-scrollbar {
+    width: 0 !important
+}
+.conversations::-webkit-scrollbar {
+    width: 0 !important
+}
+
+.chat {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 80%;
+    float: left;
+  }
+
+  .chat_send {
+    border-color: #ccc;
+    background-color: #ddd;
+    float: right;
+  }
+
+  .chat::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .chat img {
+    float: left;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+
+  .chat img.right {
+    float: right;
+    margin-left: 20px;
+    margin-right:0;
+  }
+
+  .time-right {
+    float: right;
+    color: #aaa;
+  }
+
+  .time-left {
+    float: left;
+    color: #999;
+  }
+.sendmessage {
+    padding: 20px 0;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+  .input_send {
+    width: 80%;
+  }
+
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    font-size: 18px;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown a {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+  }
+
+  .dropdown:hover .dropdown-content {display: block;}
